@@ -1,0 +1,8 @@
+{
+  "name": "srp_sideMenu",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

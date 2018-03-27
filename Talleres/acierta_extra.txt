@@ -1,0 +1,16 @@
+contenido 1
+_________________
+
+<ion-header>
+  <ion-navbar>
+    <ion-title> Acierta que numero pense </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-input type="number" min="1" max="10" [(ngModel)]="num" 
+  placeholder="Introduce un número del 1 al 10"></ion-input>
+  <p>El número que pense es {{ mayorMenor }}</p>
+  <button ion-button block (click)="compruebaNumero()">Acierta</button>
+</ion-content>
+
+
