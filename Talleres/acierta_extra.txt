@@ -39,3 +39,30 @@ numAleatorio(a,b) {
  return Math.round(Math.random()*(b-a)+parseInt(a));
  
  }
+ 
+ contenido 6
+ _________________
+ 
+ <ion-card *ngIf="mayorMenor=='igual'">
+    <ion-card-header> ¡¡¡BRAVO!!! </ion-card-header>
+    <ion-card-content> Adivinaste, el número secreto es el {{ num }} </ion-card-content>
+  </ion-card>
+ 
+ contenido 7
+ _________________
+  
+  <button *ngIf="mayorMenor!='igual'" ion-button block (click)="compruebaNumero()">Acierta</button>
+  <button *ngIf="mayorMenor=='igual'" ion-button block (click)="reinicia()">Volver a jugar</button>
+
+
+ contenido 8
+ _________________
+
+reinicia(){ 
+    // reiniciamos las variables 
+    this.num = null; 
+    this.mayorMenor = '...'; 
+    this.numEncontrado = this.numAleatorio(0,100); 
+  }
+
+  
