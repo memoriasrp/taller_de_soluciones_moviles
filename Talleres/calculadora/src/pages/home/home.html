@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Calculadora Basica
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-label stacked color="secondary">{{ve_acum}}</ion-label>
+  <ion-label  >{{ve_input}}</ion-label>
+
+  
+  <button ion-button (click)="valor(7)" outline round>7</button> 
+  <button ion-button (click)="valor(8)" outline round>8</button> 
+  <button ion-button (click)="valor(9)" outline round>9</button> 
+  <button ion-button (click)="calcular('/')" outline round>/</button> 
+  <button ion-button (click)="limpiar()" outline round>C</button> 
+  <br>
+  <button ion-button (click)="valor(4)" outline round>4</button> 
+  <button ion-button (click)="valor(5)" outline round>5</button> 
+  <button ion-button (click)="valor(6)" outline round>6</button> 
+  <button ion-button (click)="calcular('*')" outline round>*</button> 
+  <button ion-button (click)="calcular_esp('sqrt')" outline round>rz</button> 
+  <br>
+  <button ion-button (click)="valor(1)" outline round>1</button> 
+  <button ion-button (click)="valor(2)" outline round>2</button> 
+  <button ion-button (click)="valor(3)" outline round>3</button> 
+  <button ion-button (click)="calcular('+')" outline round>+</button> 
+  <button ion-button (click)="calcular_esp('^2')"outline round>^2</button> 
+  <br>
+  <button ion-button (click)="decimal()" outline round>.</button> 
+  <button ion-button (click)="valor(0)" outline round>0</button> 
+  <button ion-button (click)="resultado()" outline round>=</button> 
+  <button ion-button (click)="calcular('-')" outline round>-</button> 
+  <button ion-button (click)="calcular_esp('1/')" outline round>1/x</button> 
+  <br>
+</ion-content>
